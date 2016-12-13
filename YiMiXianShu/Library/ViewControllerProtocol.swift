@@ -9,28 +9,12 @@
 import Foundation
 import UIKit
 
-struct TabBarItemSettings {
-    var storyboardName: String
-    var viewControllerName: String
-    var title: String?
-    var titleColor: UIColor?
-    var selectedTitleColor: UIColor?
-    var image: UIImage?
-    var selectedImage: UIImage?
-    
-    init(storyboardName: String, _ viewControllerName: String) {
-        self.storyboardName = storyboardName
-        self.viewControllerName = viewControllerName
-    }
-}
-
 protocol ViewControllerProtocol {
     
     func findViewController(sbName: String, vcName: String) -> UIViewController
     
     func showViewController(controller: UIViewController)
     
-    func modifyTabBarItem(settings: TabBarItemSettings) -> UIViewController
 }
 
 extension ViewControllerProtocol where Self: UIViewController {
@@ -45,21 +29,4 @@ extension ViewControllerProtocol where Self: UIViewController {
         navigationController?.pushViewController(controller, animated: true)
     }
     
-    func modifyTabBarItem(settings: TabBarItemSettings) -> UIViewController {
-        
-        let viewController = findViewController(sbName: settings.storyboardName, vcName: settings.viewControllerName)
-        viewController.tabBarItem.title = settings.title
-        viewController.tabBarItem.image = settings.image
-        viewController.tabBarItem.selectedImage = settings.selectedImage
-        
-        if let titleColor = settings.titleColor {
-            viewController.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: titleColor], for: UIControlState.normal)
-        }
-        
-        if let selectedTitleColor = settings.selectedTitleColor {
-            viewController.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: selectedTitleColor], for: UIControlState.selected)
-        }
-    
-        return viewController
-    }
 }

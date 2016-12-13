@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class AnimatedTabBarController: UITabBarController, ViewControllerProtocol {
+class AnimatedTabBarController: UITabBarController, ViewControllerProtocol, TabBarControllerProtocol {
     
     override func viewDidLoad() {
         setViewControllers(makeControllers(), animated: true)
@@ -22,58 +22,49 @@ extension AnimatedTabBarController {
         
         var controllers = [UIViewController]()
         
-        let homeViewController = findViewController(sbName: "Home", vcName: "HomeViewController")
-        homeViewController.tabBarItem.title = "首页"
-        homeViewController.tabBarItem.image = UIImage.imageWithOriginalName(named: "ico_viewgallery_normal")
-        homeViewController.tabBarItem.selectedImage = UIImage.imageWithOriginalName(named: "ico_viewgallery_selected")
-        homeViewController.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: UIControlState.normal)
+        var homeSettings = TabBarItemSettings(storyboardName: "Home", viewControllerName: "HomeViewController")
+        homeSettings.title = "首页"
+        homeSettings.image = UIImage.imageWithOriginalName(named: "ico_viewgallery_normal")
+        homeSettings.selectedImage = UIImage.imageWithOriginalName(named: "ico_viewgallery_selected")
+        let homeViewController = modifyTabBarItem(settings: homeSettings)
         controllers.append(homeViewController)
         
-        let listViewController = findViewController(sbName: "List", vcName: "ListViewController")
-        listViewController.tabBarItem.title = "分类"
-        listViewController.tabBarItem.image = UIImage.imageWithOriginalName(named: "ico_category_normal")
-        listViewController.tabBarItem.selectedImage = UIImage.imageWithOriginalName(named: "ico_category_selected")
-        listViewController.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: UIControlState.selected)
+        var listSettings = TabBarItemSettings(storyboardName: "List", viewControllerName: "ListViewController")
+        listSettings.title = "分类"
+        listSettings.image = UIImage.imageWithOriginalName(named: "ico_category_normal")
+        listSettings.selectedImage = UIImage.imageWithOriginalName(named: "ico_category_selected")
+        let listViewController = modifyTabBarItem(settings: listSettings)
         controllers.append(listViewController)
         
-        let cartViewController = findViewController(sbName: "Cart", vcName: "CartViewController")
-        cartViewController.tabBarItem.title = "购物车"
-        cartViewController.tabBarItem.image = UIImage.imageWithOriginalName(named: "ico_cart_normal")
-        cartViewController.tabBarItem.selectedImage = UIImage.imageWithOriginalName(named: "ico_cart_selected")
+        var cartSettings = TabBarItemSettings(storyboardName: "Cart", viewControllerName: "CartViewController")
+        cartSettings.title = "购物车"
+        cartSettings.image = UIImage.imageWithOriginalName(named: "ico_cart_normal")
+        cartSettings.selectedImage = UIImage.imageWithOriginalName(named: "ico_cart_selected")
+        let cartViewController = modifyTabBarItem(settings: cartSettings)
         controllers.append(cartViewController)
         
-        let mineViewController = findViewController(sbName: "Mine", vcName: "MineViewController")
-        mineViewController.tabBarItem.title = "我的"
-        mineViewController.tabBarItem.image = UIImage.imageWithOriginalName(named: "ico_account_normal")
-        mineViewController.tabBarItem.selectedImage = UIImage.imageWithOriginalName(named: "ico_account_selected")
+        var mineSettings = TabBarItemSettings(storyboardName: "Mine", viewControllerName: "MineViewController")
+        mineSettings.title = "我的"
+        mineSettings.image = UIImage.imageWithOriginalName(named: "ico_account_normal")
+        mineSettings.selectedImage = UIImage.imageWithOriginalName(named: "ico_account_selected")
+        let mineViewController = modifyTabBarItem(settings: mineSettings)
         controllers.append(mineViewController)
         
         return controllers
-    }
-    
-    func playBounceAnimation(icon : UIImageView) {
-        
-        let bounceAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
-        bounceAnimation.values = [1.0 ,1.4, 0.9, 1.15, 0.95, 1.02, 1.0]
-        bounceAnimation.duration = TimeInterval(2.0)
-        bounceAnimation.calculationMode = kCAAnimationCubic
-        
-        icon.layer.add(bounceAnimation, forKey: "bounceAnimation")
     }
 }
 
 extension AnimatedTabBarController: UITabBarControllerDelegate {
     
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        
+        print("didSelect")
     }
     
-    
     override func tabBar(_ tabBar: UITabBar, willBeginCustomizing items: [UITabBarItem]) {
-        
+        print("willBeginCustomizing")
     }
     
     override func tabBar(_ tabBar: UITabBar, didBeginCustomizing items: [UITabBarItem]) {
-        
+        print("didBeginCustomizing")
     }
 }

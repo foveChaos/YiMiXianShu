@@ -25,6 +25,7 @@
 		EC88A3BD1DFF9AB600D15724 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC88A3BC1DFF9AB600D15724 /* ImageExtension.swift */; };
 		EC88A3BF1DFF9ACF00D15724 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC88A3BE1DFF9ACF00D15724 /* ViewControllerProtocol.swift */; };
 		EC88A3C11DFFD0EB00D15724 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC88A3C01DFFD0EB00D15724 /* ColorExtension.swift */; };
+		EC88A3C31DFFD4A400D15724 /* TabBarControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC88A3C21DFFD4A400D15724 /* TabBarControllerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +62,7 @@
 		EC88A3BC1DFF9AB600D15724 /* ImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		EC88A3BE1DFF9ACF00D15724 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
 		EC88A3C01DFFD0EB00D15724 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		EC88A3C21DFFD4A400D15724 /* TabBarControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarControllerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		EC02C2051DFE6AA500B76658 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				EC88A3C21DFFD4A400D15724 /* TabBarControllerProtocol.swift */,
 				EC88A3BE1DFF9ACF00D15724 /* ViewControllerProtocol.swift */,
 				EC88A3BC1DFF9AB600D15724 /* ImageExtension.swift */,
 				EC88A3C01DFFD0EB00D15724 /* ColorExtension.swift */,
@@ -276,6 +279,7 @@
 				EC02C20F1DFE6BD700B76658 /* MineViewController.swift in Sources */,
 				EC88A3C11DFFD0EB00D15724 /* ColorExtension.swift in Sources */,
 				EC88A3BD1DFF9AB600D15724 /* ImageExtension.swift in Sources */,
+				EC88A3C31DFFD4A400D15724 /* TabBarControllerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
