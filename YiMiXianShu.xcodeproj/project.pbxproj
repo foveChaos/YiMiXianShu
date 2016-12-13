@@ -20,10 +20,25 @@
 		EC02C2171DFE6EC200B76658 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC02C2151DFE6EC200B76658 /* List.storyboard */; };
 		EC02C21A1DFE6ED000B76658 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC02C2181DFE6ED000B76658 /* Cart.storyboard */; };
 		EC02C21D1DFE6EDE00B76658 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC02C21B1DFE6EDE00B76658 /* Mine.storyboard */; };
-		EC02C2231DFE72F100B76658 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC02C2221DFE72F100B76658 /* ViewControllerProtocol.swift */; };
-		EC77991A1DFEA3D200529181 /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7799191DFEA3D200529181 /* Temp.swift */; };
-		EC77991C1DFEA3E500529181 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC77991B1DFEA3E500529181 /* IQKeyboardManagerSwift.framework */; };
+		EC77991D1DFF7B2900529181 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC77991B1DFEA3E500529181 /* IQKeyboardManagerSwift.framework */; };
+		EC77991E1DFF7B2900529181 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC77991B1DFEA3E500529181 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC88A3BD1DFF9AB600D15724 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC88A3BC1DFF9AB600D15724 /* ImageExtension.swift */; };
+		EC88A3BF1DFF9ACF00D15724 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC88A3BE1DFF9ACF00D15724 /* ViewControllerProtocol.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC77991F1DFF7B2900529181 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC77991E1DFF7B2900529181 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EC02C1EC1DFE527100B76658 /* YiMiXianShu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YiMiXianShu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,9 +56,9 @@
 		EC02C2161DFE6EC200B76658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YiMiXianShu/Base.lproj/List.storyboard; sourceTree = SOURCE_ROOT; };
 		EC02C2191DFE6ED000B76658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YiMiXianShu/Base.lproj/Cart.storyboard; sourceTree = SOURCE_ROOT; };
 		EC02C21C1DFE6EDE00B76658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YiMiXianShu/Base.lproj/Mine.storyboard; sourceTree = SOURCE_ROOT; };
-		EC02C2221DFE72F100B76658 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
-		EC7799191DFEA3D200529181 /* Temp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
 		EC77991B1DFEA3E500529181 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
+		EC88A3BC1DFF9AB600D15724 /* ImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		EC88A3BE1DFF9ACF00D15724 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC77991C1DFEA3E500529181 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				EC77991D1DFF7B2900529181 /* IQKeyboardManagerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +129,8 @@
 		EC02C2051DFE6AA500B76658 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				EC7799191DFEA3D200529181 /* Temp.swift */,
+				EC88A3BE1DFF9ACF00D15724 /* ViewControllerProtocol.swift */,
+				EC88A3BC1DFF9AB600D15724 /* ImageExtension.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -122,7 +138,6 @@
 		EC02C2061DFE6AA500B76658 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EC02C2221DFE72F100B76658 /* ViewControllerProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,6 +196,7 @@
 				EC02C1E81DFE527000B76658 /* Sources */,
 				EC02C1E91DFE527000B76658 /* Frameworks */,
 				EC02C1EA1DFE527000B76658 /* Resources */,
+				EC77991F1DFF7B2900529181 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,14 +264,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC88A3BF1DFF9ACF00D15724 /* ViewControllerProtocol.swift in Sources */,
 				EC02C20D1DFE6BCC00B76658 /* CartViewController.swift in Sources */,
 				EC02C1F01DFE527100B76658 /* AppDelegate.swift in Sources */,
 				EC02C2111DFE6D0800B76658 /* AnimatedTabBarController.swift in Sources */,
-				EC77991A1DFEA3D200529181 /* Temp.swift in Sources */,
 				EC02C2091DFE6B9A00B76658 /* HomeViewController.swift in Sources */,
-				EC02C2231DFE72F100B76658 /* ViewControllerProtocol.swift in Sources */,
 				EC02C20B1DFE6BAC00B76658 /* ListViewController.swift in Sources */,
 				EC02C20F1DFE6BD700B76658 /* MineViewController.swift in Sources */,
+				EC88A3BD1DFF9AB600D15724 /* ImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
