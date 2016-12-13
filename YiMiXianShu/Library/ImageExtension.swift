@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import UIKit
+
+extension UIImage {
+    
+    class func imageWithOriginalName(named: String) -> UIImage? {
+        let image = UIImage(named: named)
+        if let image = image {
+            return image.withRenderingMode(.alwaysOriginal)
+        }
+        return nil
+    }
+}

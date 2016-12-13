@@ -24,6 +24,7 @@
 		EC77991E1DFF7B2900529181 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC77991B1DFEA3E500529181 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC88A3BD1DFF9AB600D15724 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC88A3BC1DFF9AB600D15724 /* ImageExtension.swift */; };
 		EC88A3BF1DFF9ACF00D15724 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC88A3BE1DFF9ACF00D15724 /* ViewControllerProtocol.swift */; };
+		EC88A3C11DFFD0EB00D15724 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC88A3C01DFFD0EB00D15724 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +60,7 @@
 		EC77991B1DFEA3E500529181 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
 		EC88A3BC1DFF9AB600D15724 /* ImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		EC88A3BE1DFF9ACF00D15724 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
+		EC88A3C01DFFD0EB00D15724 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			children = (
 				EC88A3BE1DFF9ACF00D15724 /* ViewControllerProtocol.swift */,
 				EC88A3BC1DFF9AB600D15724 /* ImageExtension.swift */,
+				EC88A3C01DFFD0EB00D15724 /* ColorExtension.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				EC02C2091DFE6B9A00B76658 /* HomeViewController.swift in Sources */,
 				EC02C20B1DFE6BAC00B76658 /* ListViewController.swift in Sources */,
 				EC02C20F1DFE6BD700B76658 /* MineViewController.swift in Sources */,
+				EC88A3C11DFFD0EB00D15724 /* ColorExtension.swift in Sources */,
 				EC88A3BD1DFF9AB600D15724 /* ImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
