@@ -75,7 +75,7 @@ extension TabBarControllerProtocol where Self: UITabBarController {
     
     func setTitleColor(color: UIColor, _ selectedColor: UIColor) {
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: color], for: UIControlState.normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: selectedColor], for: UIControlState.normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: selectedColor], for: UIControlState.selected)
     }
 }
 
