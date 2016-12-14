@@ -27,6 +27,7 @@ final class AnimatedTabBarController: UITabBarController, ViewControllerProtocol
 extension AnimatedTabBarController {
     
     func initialize() {
+        
         makeControllers()
     }
 }
@@ -34,6 +35,6 @@ extension AnimatedTabBarController {
 extension AnimatedTabBarController: UITabBarControllerDelegate {
     
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        print("didSelect")
+        print(item)
     }
 }
