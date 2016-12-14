@@ -12,10 +12,6 @@ import UIKit
 protocol TabBarControllerProtocol {
     
     func makeControllers()
-    
-    func modifyTabBarItem(settings: TabBarItemSettings) -> UIViewController
-    
-    func setTitleColor(color: UIColor, selectedColor: UIColor)
 }
 
 extension TabBarControllerProtocol where Self: UITabBarController {
@@ -62,6 +58,9 @@ extension TabBarControllerProtocol where Self: UITabBarController {
         
         setViewControllers(controllers, animated: true)
     }
+}
+
+fileprivate extension TabBarControllerProtocol {
     
     func modifyTabBarItem(settings: TabBarItemSettings) -> UIViewController {
         
@@ -88,6 +87,7 @@ extension TabBarControllerProtocol where Self: UITabBarController {
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: color], for: UIControlState.normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: selectedColor], for: UIControlState.selected)
     }
+    
 }
 
 struct TabBarItemSettings {

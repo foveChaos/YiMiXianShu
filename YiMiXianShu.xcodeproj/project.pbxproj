@@ -20,6 +20,10 @@
 		EC02C2171DFE6EC200B76658 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC02C2151DFE6EC200B76658 /* List.storyboard */; };
 		EC02C21A1DFE6ED000B76658 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC02C2181DFE6ED000B76658 /* Cart.storyboard */; };
 		EC02C21D1DFE6EDE00B76658 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC02C21B1DFE6EDE00B76658 /* Mine.storyboard */; };
+		EC73F3FE1E011983006744EB /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73F3FD1E011983006744EB /* HomeNavigationController.swift */; };
+		EC73F4001E011A25006744EB /* ListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73F3FF1E011A25006744EB /* ListNavigationController.swift */; };
+		EC73F4021E011A5C006744EB /* CartNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73F4011E011A5C006744EB /* CartNavigationController.swift */; };
+		EC73F4041E011AA6006744EB /* MineNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73F4031E011AA6006744EB /* MineNavigationController.swift */; };
 		EC77991D1DFF7B2900529181 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC77991B1DFEA3E500529181 /* IQKeyboardManagerSwift.framework */; };
 		EC77991E1DFF7B2900529181 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC77991B1DFEA3E500529181 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC88A3BD1DFF9AB600D15724 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC88A3BC1DFF9AB600D15724 /* ImageExtension.swift */; };
@@ -58,6 +62,10 @@
 		EC02C2161DFE6EC200B76658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YiMiXianShu/Base.lproj/List.storyboard; sourceTree = SOURCE_ROOT; };
 		EC02C2191DFE6ED000B76658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YiMiXianShu/Base.lproj/Cart.storyboard; sourceTree = SOURCE_ROOT; };
 		EC02C21C1DFE6EDE00B76658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YiMiXianShu/Base.lproj/Mine.storyboard; sourceTree = SOURCE_ROOT; };
+		EC73F3FD1E011983006744EB /* HomeNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
+		EC73F3FF1E011A25006744EB /* ListNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNavigationController.swift; sourceTree = "<group>"; };
+		EC73F4011E011A5C006744EB /* CartNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartNavigationController.swift; sourceTree = "<group>"; };
+		EC73F4031E011AA6006744EB /* MineNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineNavigationController.swift; sourceTree = "<group>"; };
 		EC77991B1DFEA3E500529181 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
 		EC88A3BC1DFF9AB600D15724 /* ImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		EC88A3BE1DFF9ACF00D15724 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
@@ -159,8 +167,9 @@
 		EC02C21E1DFE6EEC00B76658 /* Home Scene */ = {
 			isa = PBXGroup;
 			children = (
-				EC02C2081DFE6B9A00B76658 /* HomeViewController.swift */,
+				EC73F3FD1E011983006744EB /* HomeNavigationController.swift */,
 				EC02C2121DFE6EB500B76658 /* Home.storyboard */,
+				EC02C2081DFE6B9A00B76658 /* HomeViewController.swift */,
 			);
 			name = "Home Scene";
 			sourceTree = "<group>";
@@ -168,8 +177,9 @@
 		EC02C21F1DFE6F0800B76658 /* List Scene */ = {
 			isa = PBXGroup;
 			children = (
-				EC02C20A1DFE6BAC00B76658 /* ListViewController.swift */,
+				EC73F3FF1E011A25006744EB /* ListNavigationController.swift */,
 				EC02C2151DFE6EC200B76658 /* List.storyboard */,
+				EC02C20A1DFE6BAC00B76658 /* ListViewController.swift */,
 			);
 			name = "List Scene";
 			sourceTree = "<group>";
@@ -177,8 +187,9 @@
 		EC02C2201DFE6F1A00B76658 /* Cart Scene */ = {
 			isa = PBXGroup;
 			children = (
-				EC02C20C1DFE6BCC00B76658 /* CartViewController.swift */,
+				EC73F4011E011A5C006744EB /* CartNavigationController.swift */,
 				EC02C2181DFE6ED000B76658 /* Cart.storyboard */,
+				EC02C20C1DFE6BCC00B76658 /* CartViewController.swift */,
 			);
 			name = "Cart Scene";
 			sourceTree = "<group>";
@@ -186,8 +197,9 @@
 		EC02C2211DFE6F3B00B76658 /* Mine Scene */ = {
 			isa = PBXGroup;
 			children = (
-				EC02C20E1DFE6BD700B76658 /* MineViewController.swift */,
+				EC73F4031E011AA6006744EB /* MineNavigationController.swift */,
 				EC02C21B1DFE6EDE00B76658 /* Mine.storyboard */,
+				EC02C20E1DFE6BD700B76658 /* MineViewController.swift */,
 			);
 			name = "Mine Scene";
 			sourceTree = "<group>";
@@ -271,14 +283,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC88A3BF1DFF9ACF00D15724 /* ViewControllerProtocol.swift in Sources */,
+				EC73F4001E011A25006744EB /* ListNavigationController.swift in Sources */,
 				EC02C20D1DFE6BCC00B76658 /* CartViewController.swift in Sources */,
 				EC02C1F01DFE527100B76658 /* AppDelegate.swift in Sources */,
+				EC73F4021E011A5C006744EB /* CartNavigationController.swift in Sources */,
 				EC02C2111DFE6D0800B76658 /* AnimatedTabBarController.swift in Sources */,
 				EC02C2091DFE6B9A00B76658 /* HomeViewController.swift in Sources */,
+				EC73F3FE1E011983006744EB /* HomeNavigationController.swift in Sources */,
 				EC02C20B1DFE6BAC00B76658 /* ListViewController.swift in Sources */,
 				EC02C20F1DFE6BD700B76658 /* MineViewController.swift in Sources */,
 				EC88A3C11DFFD0EB00D15724 /* ColorExtension.swift in Sources */,
 				EC88A3BD1DFF9AB600D15724 /* ImageExtension.swift in Sources */,
+				EC73F4041E011AA6006744EB /* MineNavigationController.swift in Sources */,
 				EC88A3C31DFFD4A400D15724 /* TabBarControllerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
