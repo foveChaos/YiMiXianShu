@@ -11,9 +11,16 @@ import UIKit
 
 final class AnimatedTabBarController: UITabBarController, ViewControllerProtocol, TabBarControllerProtocol {
     
-    override func viewDidLoad() {
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
-
+        initialize()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        initialize()
     }
 }
 
