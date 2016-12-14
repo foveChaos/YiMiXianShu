@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-final class MineViewController: UIViewController, ViewControllerProtocol {
+final class MineViewController: UITableViewController, ViewControllerProtocol {
     
 }
