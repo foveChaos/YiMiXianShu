@@ -35,6 +35,8 @@ extension AnimatedTabBarController {
 extension AnimatedTabBarController: UITabBarControllerDelegate {
     
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        print(item)
+        for view in tabBar.subviews {
+            print(view)
+        }
     }
 }
