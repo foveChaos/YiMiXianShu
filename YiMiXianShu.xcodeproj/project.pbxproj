@@ -143,8 +143,8 @@
 				EC88A3C21DFFD4A400D15724 /* TabBarControllerProtocol.swift */,
 				EC88A3BE1DFF9ACF00D15724 /* ViewControllerProtocol.swift */,
 				EC88A3BC1DFF9AB600D15724 /* ImageExtension.swift */,
-				EC02C2061DFE6AA500B76658 /* Model */,
 				EC88A3C01DFFD0EB00D15724 /* ColorExtension.swift */,
+				EC02C2061DFE6AA500B76658 /* Model */,
 			);
 			path = Library;
 			sourceTree = "<group>";
