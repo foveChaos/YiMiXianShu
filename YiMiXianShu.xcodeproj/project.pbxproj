@@ -106,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				EC02C2051DFE6AA500B76658 /* Library */,
-				EC02C2061DFE6AA500B76658 /* Model */,
 				EC02C2071DFE6AA500B76658 /* View */,
 				EC02C2031DFE6AA500B76658 /* Controller */,
 				EC02C1F81DFE527100B76658 /* Assets.xcassets */,
@@ -144,6 +143,7 @@
 				EC88A3C21DFFD4A400D15724 /* TabBarControllerProtocol.swift */,
 				EC88A3BE1DFF9ACF00D15724 /* ViewControllerProtocol.swift */,
 				EC88A3BC1DFF9AB600D15724 /* ImageExtension.swift */,
+				EC02C2061DFE6AA500B76658 /* Model */,
 				EC88A3C01DFFD0EB00D15724 /* ColorExtension.swift */,
 			);
 			path = Library;
@@ -153,7 +153,8 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			name = Model;
+			path = ../Model;
 			sourceTree = "<group>";
 		};
 		EC02C2071DFE6AA500B76658 /* View */ = {
